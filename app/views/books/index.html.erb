@@ -28,7 +28,7 @@
         </td>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
-        <td><%= book.price %></td>
+        <td><%= number_to_currency(book.price , unit: '¥' , precision: 0) %></td>
         <td><%= book.publisher %></td>
         <td><%= book.sold %></td>
         <td><%= book.code %></td>
